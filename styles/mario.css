@@ -1,0 +1,148 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: dimgray;
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+}
+.top {
+    background-color:rgb(246, 50, 50);
+    color: white;
+}
+#header {
+    grid-area: header;
+    justify-items: stretch;
+    align-items: stretch;
+    display: grid;
+    grid-template-areas:
+    "logo"
+    "banner"
+    "nav";
+}
+#logo {
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#logo span {
+    height: 30px;
+    border: 7px solid white;
+    border-radius: 40px;
+    padding: 10px 10px 20px 10px;
+}
+#banner {
+    background: url(/img/banner.png);
+    background-repeat:repeat-x;
+    background-size:60rem;
+    background-position: bottom;
+    height: 400px;
+    grid-area: banner;
+    justify-items: stretch;
+    align-items: stretch;
+    position: relative;
+}
+#welcome {
+    background-color: rgb(254, 182, 20);
+    height: auto;
+    width: 300px;
+    font-size: 50px;
+    position:absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    padding: 10px;
+    text-align: center;
+}
+#nav {
+    background-color: rgb(244, 244, 244);
+    height: 50px;
+    grid-area: nav;
+    justify-items: stretch;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+#nav :hover {
+    color: rgb(246, 50, 50);
+}
+#main {
+    grid-area: main;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+#article {
+    grid-area: article;
+    justify-items: stretch;
+    align-items: stretch;
+    font-weight:lighter; 
+    text-align: justify;
+    line-height: 40px;
+    margin-top: 20px;
+    padding: 30px;
+}
+#article h1{
+    font-size: 30px;
+    color: rgb(246, 50, 50);
+}
+#fot {
+   display: flex; 
+   justify-content: space-between;
+   padding: 60px;
+}
+#fot img {
+    height: 200px;
+}
+#join {
+    background-color: rgb(244, 244, 244);
+    grid-area: join;
+    justify-items: stretch;
+    align-items: stretch;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#join h2 {
+    color: black;
+}
+#join input{
+border-radius: 30px;
+padding: 10px;
+font-size: 20px;
+border: transparent;
+padding: 10px;
+}
+#footer {
+    height: 100px;
+    grid-area: footer;
+    justify-items: stretch;
+    align-items: stretch;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
